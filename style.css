@@ -1,0 +1,51 @@
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: /* Defino as áreas da grid, onde cada área representa um card */
+        "area1 area1 area2"
+        "area3 area4 area2"
+        "area5 area5 area6";
+
+    gap: 10px;
+}
+
+.item { /* Adiciono a classe item para estilizar os cards */
+    padding: 0;
+    border: 1px solid rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+
+.item img { /* Adiciono a classe item img para estilizar as imagens dentro dos cards */
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}   
+
+.item1 { /* Defino a área da grid para o item 1 */
+    grid-area: area1;
+}
+
+.item2 { /* Defino a área da grid para o item 2 */
+    grid-area: area2;
+}
+
+.item3 { /* Defino a área da grid para o item 3 */
+    grid-area: area3;
+}
+
+.item4 { /* Defino a área da grid para o item 4 */
+    grid-area: area4;
+}
+
+.item5 { /* Defino a área da grid para o item 5 */
+    grid-area: area5;
+}
+
+.item6 { /* Defino a área da grid para o item 6 */
+    grid-area: area6;
+}
